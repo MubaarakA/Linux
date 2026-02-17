@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# copy this script
+
 USAGE=$(df / | awk 'NR==2 {print $5}' | tr -d '%')
 
 if [ "$USAGE" -gt 50 ]; then
